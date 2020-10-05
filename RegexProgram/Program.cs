@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Text.RegularExpressions;
 
 namespace RegexProgram
@@ -33,6 +34,7 @@ namespace RegexProgram
             Console.WriteLine("Enter your EmailID: ");
             string EmailId = Console.ReadLine();
             string EmailPattern = @"^([a-z][a-z0-9.+_-]*@([a-z0-9]([a-z0-9-]*[a-z0-9])?\.)+[a-z0-9]([a-z0-9-]*[a-z])?)$";
+
             if (Regex.IsMatch(EmailId, EmailPattern))
                 Console.WriteLine("valid EmailId ");
             else
