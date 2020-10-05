@@ -11,7 +11,7 @@ namespace RegexProgram
 
             Console.WriteLine("Enter ZIP Code: ");
             string zipcode = Console.ReadLine();
-            string zipPattern = "^[1-9]{1}[0-9]{5}$";
+            string zipPattern = "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$";
             if (Regex.IsMatch(zipcode, zipPattern))
                 Console.WriteLine("valid ZIP Code: " + zipcode);
             else
